@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind and daisy ui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              backgroundImage:{
+                "header-bg":"",
+              },
+              colors: {
+                "nav-text":"#424247",
+                "green-color":"#1dd100",
+                "color": "rgba(19, 19, 24, 0.60)",
+                "main-color":"#131318",
+              }
+            }
+          }
+        }
+      </script>
+        <!-- css custom file -->
+        <style>
+            .font-Manrope{
+                font-family: 'Manrope', sans-serif;
+            };
+        </style>
+</head>
+<body class="font-Manrope">
+    <div  class="lg:mx-28 mx-8">
+        <header>
+             <!-- header start -->
+             <nav class="flex justify-around mt-8">
+                <i class="fa-solid fa-bars lg:hidden text-4xl mr-6"></i>
+                <h2 class="text-4xl font-extrabold">P-Ticket</h2>
+                <div class="text-base text-nav-text space-x-6 capitalize m-auto lg:flex hidden font-bold">
+                    <a class="text-green-color hover:text-red-500" href="">home</a>
+                    <a class="hover:text-green-color" href="">about</a>
+                    <a class="hover:text-green-color" href="">destination</a>
+                    <a class="hover:text-green-color" href="">search</a>
+                </div>
+                <div>
+                    <button class="btn bg-[#e8fae5] capitalize text-green-color lg:px-8 px-5 lg:text-lg text-sm ml-4 hover:text-pink-color"><i class="fa-solid fa-van-shuttle"></i>Bus</button>
+                </div>
+            </nav>
+            <!-- nav end -->
+            <div class="bg-[url(images/banner.png)] max-w-full h-screen bg-no-repeat mt-5 rounded-3xl flex justify-center text-center relative">
+                <div  class="">
+                    <h1 class="text-5xl text-white font-extrabold pt-20 py-10">End-to-end travel with <br> <span class="text-green-color">p paribahan</span></h1>
+                    <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel maiores, quia incidunt numquam nostrum <br> qui mollitia laboriosam harum velit architecto?</p>
+                    <button class="btn bg-[#e8fae5] capitalize text-green-color lg:px-8 px-5 lg:text-lg text-sm ml-4 hover:text-pink-color m-4">buy tickets</button>
+                </div>
+        </header>
+        <main>
+            <!-- main start -->
+            <section>
+                <h2 class="flex justify-center text-center text-3xl font-bold mb-8">best offers for you</h2>
+                <div class="flex justify-center">
+                    <div class="flex mr-4">
+                        <div class="p-10 bg-yellow-400">
+                            <h3 class="text-2xl font-extrabold">15% off</h3>
+                            <p class="font-bold">on your next purchase</p>
+                            <p class="text-sm">use by january 2024</p>
+                        </div>
+                        <div class="p-10 bg-yellow-400">
+                            <h3>new15</h3>
+                            <p>coupon code</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-pink-400">
+                        <div class="p-10">
+                            <h3 class="text-2xl font-extrabold">15% off</h3>
+                            <p class="font-bold">on your next purchase</p>
+                            <p class="text-sm">use by january 2024</p>
+                        </div>
+                        <div class="p-10">
+                            <h3>new15</h3>
+                            <p>coupon code</p>
+                        </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
